@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>SCLEAGUE</title>  
+	<link rel="stylesheet" href="style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+	<script
+			  src="https://code.jquery.com/jquery-3.1.1.min.js"
+			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			  crossorigin="anonymous">
+	</script>
+</head>
+
+<body>
+
+<div id="wrapper">
+		<div class="png">
+			<img src="logo.png" id="img1"/>
+		</div>
+		<div class="content">
+			<input type="submit" value="SIGN IN"  id="button1" class="button1style">
+		</div>
+</div>
+
+<div id="myModal" class="modal">
+  <div class="modal-content" id="myModalCont">
+		<span class="close">&times;</span>
+		<div class="img2cont">
+			<img src="login.png" class="img2"/>
+		</div>
+	<div class="formcont">
+		<form>
+			<input type="text" placeholder="Login" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
+			<input type="password" placeholder="Password" onfocus="this.placeholder=''" onblur="this.placeholder='Pasword'">
+			<input type="submit" value="Login" id="button2" class="button2style">
+		</form>
+	</div>
+  </div>
+</div>
+
+
+<div id="navButton" class="animated infinite bounce">
+<span id="buttonElement" class="navButtonSpan">Dowiedz się więcej!</span>
+</div>
+<div id="mySidenav" class="sidenav">
+	<div class="sideMenu">
+		<a href="google.com" id="linkElement">About Us</a>
+		<a href="google.com" id="linkElement">How To Play</a>
+		<a href="google.com" id="linkElement">Contact</a>
+	</div>
+  </div>
+</div>
+
+	<script type="text/javascript" src="js/advenced_3d_background.js"></script>
+	<script type="text/javascript" src="js/personalised_animation.js"></script>
+	<script type="text/javascript">
+	
+var ButtonElement = document.getElementById('buttonElement');
+var sideNavElement = document.getElementById('mySidenav');
+var linkElement = document.getElementById('linkElement');
+
+
+ButtonElement.addEventListener('mouseover', showMe);
+
+
+function showMe() {
+    $(sideNavElement).removeClass('animated bounceOutDown');
+    $(ButtonElement).addClass('animated bounceOutDown');
+}
+
+
+function hideMe() {
+    $(sideNavElement).addClass('animated bounceOutDown');
+	$(ButtonElement).removeClass('animated bounceOutDown');
+}
+
+
+	</script>
+</body>
+</html>
