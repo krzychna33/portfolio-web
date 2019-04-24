@@ -228,12 +228,15 @@ body{
 
 .text-content{
   padding-left: 10px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 .text-content i{
   font-size: 24px;
   color: #757572;
   padding-right: 8px;
+}
+.title-content{
+  min-height: 50px;
 }
 
 footer{
